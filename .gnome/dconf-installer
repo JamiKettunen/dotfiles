@@ -66,7 +66,7 @@ name='Games'
 [org/gnome/desktop/app-folders/folders/Utilities]
 translate=true
 categories=['X-GNOME-Utilities']
-apps=['flash-player-properties.desktop', 'ibus-setup.desktop', 'qv4l2.desktop', 'qvidcap.desktop', 'gnome-control-center.desktop', 'gnome-system-monitor.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.MultiWriter.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Terminal.desktop', 'nm-connection-editor.desktop', 'org.gnome.Screenshot.desktop', 'bssh.desktop', 'eog.desktop', 'org.gnome.baobab.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'org.gnome.tweaks.desktop']
+apps=['nvidia-settings.desktop', 'flash-player-properties.desktop', 'ibus-setup.desktop', 'qv4l2.desktop', 'qvidcap.desktop', 'gnome-control-center.desktop', 'gnome-system-monitor.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.MultiWriter.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Terminal.desktop', 'nm-connection-editor.desktop', 'org.gnome.Screenshot.desktop', 'bssh.desktop', 'eog.desktop', 'org.gnome.baobab.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'org.gnome.tweaks.desktop']
 name='X-GNOME-Utilities.directory'
 
 [org/gnome/desktop/screensaver]
