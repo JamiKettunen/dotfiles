@@ -5,6 +5,7 @@
 alias 'a'='alias'
 
 # ls
+# TODO Use 'lsd' on unicode terminals (if installed)
 a 'ls'='ls --color' # Colorize output
 a 'll'='ls -lh'     # Human-readable sizes
 a 'la'='ls -lAh'    # -=-
@@ -38,9 +39,7 @@ a 'ipmaddr'='ip maddr'
 a 'netstat'='ss'
 
 # Misc aliases
-a 'pacman'='pacman --color auto' # Colorize output
-a 'yay'='yay --color auto'       # -=-
-a 'grep'='grep --color'          # -=-
+a 'grep'='grep --color'          # Colorize output
 a 'egrep'='grep -E'              # -=-
 a 'fgrep'='grep -F'              # -=-
 a 'df'='df -h'                   # Human-readable sizes
