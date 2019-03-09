@@ -59,6 +59,7 @@
 	"editor.acceptSuggestionOnEnter": "smart",
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.editor.highlightModifiedTabs": true,
+	"editor.wordWrap": "bounded",
 	"editor.mouseWheelZoom": true,
 	"editor.dragAndDrop": false,
 
