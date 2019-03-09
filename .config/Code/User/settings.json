@@ -1,0 +1,83 @@
+{
+	// UI
+	"window.titleBarStyle": "native",
+	"window.menuBarVisibility": "toggle",
+	"window.zoomLevel": 0,
+	"breadcrumbs.enabled": true,
+	"extensions.showRecommendationsOnlyOnDemand": true,
+	"workbench.startupEditor": "welcomePageInEmptyWorkbench",
+	"workbench.enableExperiments": false,
+	"workbench.sideBar.location": "right",
+	"workbench.statusBar.feedback.visible": false,
+	"workbench.list.horizontalScrolling": true,
+	"update.showReleaseNotes": false,
+	"zenMode.hideStatusBar": false,
+	"zenMode.fullScreen": false,
+	"terminal.explorerKind": "external",
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.rendererType": "canvas",
+	"terminal.integrated.scrollback": 512,
+
+	// Theming (Material Theme & Icons)
+	"materialTheme.accent": "Blue",
+	"workbench.colorCustomizations": {
+		"activityBarBadge.background": "#2979FF",
+		"list.activeSelectionForeground": "#2979FF",
+		"list.inactiveSelectionForeground": "#2979FF",
+		"list.highlightForeground": "#2979FF",
+		"scrollbarSlider.activeBackground": "#2979FF50",
+		"editorSuggestWidget.highlightForeground": "#2979FF",
+		"textLink.foreground": "#2979FF",
+		"progressBar.background": "#2979FF",
+		"pickerGroup.foreground": "#2979FF",
+		"tab.activeBorder": "#2979FF",
+		"notificationLink.foreground": "#2979FF",
+		"editorWidget.resizeBorder": "#2979FF",
+		"editorWidget.border": "#2979FF",
+		"settings.modifiedItemIndicator": "#2979FF",
+		"settings.headerForeground": "#2979FF",
+		"panelTitle.activeBorder": "#2979FF",
+		"breadcrumb.activeSelectionForeground": "#2979FF",
+		"menu.selectionForeground": "#2979FF",
+		"menubar.selectionForeground": "#2979FF"
+	},
+	"workbench.colorTheme": "Material Theme Ocean High Contrast",
+	"workbench.iconTheme": "material-icon-theme",
+	"material-icon-theme.folders.color": "#42a5f5",
+
+	// Editor
+	"editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+	"editor.fontSize": 14,
+	"editor.fontLigatures": true,
+	"editor.tabSize": 2,
+	"editor.renderWhitespace": "boundary",
+	"editor.minimap.enabled": false,
+	"debug.inlineValues": true,
+	"editor.stablePeek": true,
+	"editor.tabCompletion": "on",
+	"editor.suggestSelection": "first",
+	"editor.acceptSuggestionOnEnter": "smart",
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.editor.highlightModifiedTabs": true,
+	"editor.mouseWheelZoom": true,
+	"editor.dragAndDrop": false,
+
+	// Files
+	"files.autoSaveDelay": 3000,
+	"files.autoGuessEncoding": true,
+	"files.encoding": "utf8",
+
+	// Extensions
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+	"python.jediEnabled": false,
+	"python.jediMemoryLimit": 2048,
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+	// No telemetry
+	"telemetry.enableTelemetry": false,
+	"telemetry.enableCrashReporter": false,
+
+	// Windows only
+	"window.autoDetectHighContrast": false
+}

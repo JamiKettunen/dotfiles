@@ -1,0 +1,59 @@
+[
+	// Use CTRL+TAB & CTRL+SHIFT+TAB to switch tabs instantly
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditor"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditor"
+	},
+
+	// Type {} characters with CTRL+ALT+(7 & 0) on *nix systems
+	{
+		"key": "ctrl+alt+7",
+		"command": "type", "args": { "text": "{" }, "when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+0",
+		"command": "type", "args": { "text": "}" }, "when": "editorTextFocus"
+	},
+
+	// Type [] characters with CTRL+ALT+(8 & 9) on *nix systems
+	{
+		"key": "ctrl+alt+8",
+		"command": "type", "args": { "text": "[" }, "when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+9",
+		"command": "type", "args": { "text": "]" }, "when": "editorTextFocus"
+	},
+
+	// Unbinds
+	{
+		"key": "ctrl+tab",
+		"command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
+	},
+	{
+		"key": "ctrl+pageup",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "ctrl+pagedown",
+		"command": "-workbench.action.nextEditor"
+	}
+]

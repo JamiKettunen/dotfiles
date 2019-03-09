@@ -1,6 +1,11 @@
 [system/locale]
 region='§locale'
 
+[org/gnome/desktop/peripherals/touchpad]
+natural-scroll=true
+scroll-method='two-finger-scrolling'
+tap-to-click=true
+
 [org/gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=true
 night-light-enabled=true
