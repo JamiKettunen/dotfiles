@@ -8,7 +8,7 @@ alias 'a'='alias'
 # TODO Use 'lsd' on unicode terminals (if installed)
 a 'ls'='ls --color' # Colorize output
 a 'll'='ls -lh'     # Human-readable sizes
-a 'la'='ls -lAh'    # -=-
+a 'la'='ls -lah'    # -=-
 a 'sl'='ls'
 a 'l'='ls'
 a 'dir'='ls'
@@ -38,6 +38,13 @@ a 'ifrename'='nameif'
 a 'ipmaddr'='ip maddr'
 a 'netstat'='ss'
 
+# termbin
+command -v nc >/dev/null
+if (( $? == 0 )); then
+	a 'termbin'='nc termbin.com 9999'
+	a 'tb'='termbin'
+fi
+
 # Misc aliases
 a 'grep'='grep --color'          # Colorize output
 a 'egrep'='grep -E'              # -=-
@@ -47,6 +54,7 @@ a 'free'='free -m'               # -=-
 a 'po'='popd'
 a 'pu'='pushd'
 a 'md'='mkdir'
+a 'rd'='rmdir' # TODO Use 'rm -rf' instead?
 a 'up'='cd ..'
 a 'cd..'='cd ..'
 a 'quit'='exit'

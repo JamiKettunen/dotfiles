@@ -17,8 +17,8 @@ unset user_col
 # Load extra bash completions if present
 [[ -r /usr/share/bash-completion/bash_completion ]] && . /usr/share/bash-completion/bash_completion
 
-# Include a local user binary path
-export PATH=$PATH:~/.local/bin
+# Include ccache binaries & local user binaries in PATH
+export PATH=/usr/lib/ccache/bin:$PATH:$HOME/.local/bin
 
 # Misc config
 export HISTCONTROL=ignoredups # No duplicate command history entries
