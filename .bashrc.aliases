@@ -39,7 +39,7 @@ a 'ipmaddr'='ip maddr'
 a 'netstat'='ss'
 
 # termbin
-command -v nc >/dev/null
+type nc &>/dev/null
 if (( $? == 0 )); then
 	a 'termbin'='nc termbin.com 9999'
 	a 'tb'='termbin'
@@ -56,21 +56,38 @@ a 'pu'='pushd'
 a 'md'='mkdir'
 a 'rd'='rmdir' # TODO Use 'rm -rf' instead?
 a 'update-grub'='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+a 'lines'='tokei'
 a 'ecoh'='echo'
 a 'up'='cd ..'
 a 'cd..'='cd ..'
 a 'quit'='exit'
 
+# Quick hashing aliases e.g. 'md5 file1 file2'
+type rhash &>/dev/null
+#if cmd_exists 'rhash'; then
+if (( $? == 0 )); then
+	algorithms=(crc32c sha3-256 sha3-512) # crc32
+	for a in ${algorithms[@]}; do
+		a "$a"="rhash --$a" # --speed --percents
+	done
+	algorithms=(md5 sha1 sha256 sha512)
+	for a in ${algorithms[@]}; do
+		a "$a"="$a"'sum'
+	done
+	unset algorithms a
+fi
+
 # Point vi => vim if applicable
-command -v vim >/dev/null
+type vim &>/dev/null
 (( $? == 0 )) && a 'vi'='vim'
 
 # Point top => htop if applicable
-command -v htop >/dev/null
+type htop &>/dev/null
 (( $? == 0 )) && a 'top'='htop'
 
 # Rainbow screen & neofetch when not in a TTY
 if [[ "$TERM" != "linux" ]]; then
+	# TODO Check if lolcat, screenfetch & neofetch exist
 	a 'screenfetch'='screenfetch | lolcat'
 	a 'neofetch'='neofetch | lolcat'
 fi
