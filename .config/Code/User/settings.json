@@ -67,6 +67,7 @@
 	"files.autoSaveDelay": 3000,
 	"files.autoGuessEncoding": true,
 	"files.encoding": "utf8",
+	"files.eol": "\n",
 
 	// Extensions
 	"python.linting.enabled": true,
