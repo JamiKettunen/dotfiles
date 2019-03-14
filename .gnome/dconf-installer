@@ -1,6 +1,9 @@
 [system/locale]
 region='§locale'
 
+[org/gtk/settings/file-chooser]
+sort-directories-first=true
+
 [org/gnome/desktop/peripherals/touchpad]
 natural-scroll=true
 scroll-method='two-finger-scrolling'
