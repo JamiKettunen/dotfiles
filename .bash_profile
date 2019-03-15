@@ -20,7 +20,7 @@ fi
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 # Start a session / sway if not running
-if [[ -z "$DISPLAY" -a $XDG_VTNR -eq 1 ]]; then
+if [ -z "$DISPLAY" -a $XDG_VTNR -eq 1 ]; then
 	if [[ -f ~/.xinitrc ]]; then
 		startx
 	else
