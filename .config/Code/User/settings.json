@@ -1,3 +1,4 @@
+// Extensions: coenraads.bracket-pair-colorizer-2, pkief.material-icon-theme, equinusocio.vsc-material-theme, ms-python.python, dongli.python-preview, visualstudioexptteam.vscodeintellicode
 {
 	// UI
 	"window.titleBarStyle": "native",
@@ -77,6 +78,30 @@
 	"python.jediEnabled": false,
 	"python.jediMemoryLimit": 2048,
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	/*"bracket-pair-colorizer-2.colors": [
+		"Gold",
+		"Orchid",
+		"LightSkyBlue"
+	],*/
+	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+	"bracket-pair-colorizer-2.forceIterationColorCycle": true,
+	"bracket-pair-colorizer-2.colorMode": "Consecutive",
+	"bracket-pair-colorizer-2.highlightActiveScope": true,
+	"bracket-pair-colorizer-2.activeScopeCSS": [
+		"borderStyle : solid",
+		"borderWidth : 1px",
+		"borderColor : {color}",
+	],
+	/*"bracket-pair-colorizer-2.scopeLineCSS": [
+		"borderStyle : solid",
+		"borderWidth : 1px",
+		"borderColor : {color}",
+		"opacity: 0.5"
+	],*/
+	"bracket-pair-colorizer-2.showBracketsInGutter": true,
+	"bracket-pair-colorizer-2.showVerticalScopeLine": true,
+	"bracket-pair-colorizer-2.showHorizontalScopeLine": true,
+	"bracket-pair-colorizer-2.scopeLineRelativePosition": true,
 
 	// No telemetry
 	"telemetry.enableTelemetry": false,
