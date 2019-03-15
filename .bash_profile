@@ -18,3 +18,13 @@ fi
 
 # If .bashrc is present, execute it on login
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# Start a session / sway if not running
+if [[ -z "$DISPLAY" -a $XDG_VTNR -eq 1 ]]; then
+	if [[ -f ~/.xinitrc ]]; then
+		startx
+	else
+		type sway &>/dev/null
+		(( $? == 0 )) && exec sway
+	fi
+fi
