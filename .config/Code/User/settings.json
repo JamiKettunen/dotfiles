@@ -50,6 +50,8 @@
 	"editor.fontSize": 14,
 	"editor.fontLigatures": true,
 	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
 	"editor.renderWhitespace": "boundary",
 	"editor.minimap.enabled": false,
 	"debug.inlineValues": true,
