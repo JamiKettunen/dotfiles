@@ -91,6 +91,7 @@
 		"borderStyle : solid",
 		"borderWidth : 1px",
 		"borderColor : {color}",
+		"opacity: 0.5"
 	],
 	/*"bracket-pair-colorizer-2.scopeLineCSS": [
 		"borderStyle : solid",
