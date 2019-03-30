@@ -51,6 +51,7 @@ a 'egrep'='grep -E'              # -=-
 a 'fgrep'='grep -F'              # -=-
 a 'df'='df -h'                   # Human-readable sizes
 a 'free'='free -m'               # -=-
+a 'mnt'='mount'
 a 'po'='popd'
 a 'pu'='pushd'
 a 'md'='mkdir'
